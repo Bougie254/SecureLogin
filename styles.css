@@ -13,19 +13,20 @@ body {
     height: 100vh;
     background: linear-gradient(120deg, #a1c4fd, #c2e9fb); /* Soft, calming gradient */
     font-size: 16px;
+    color: #333; /* Default text color for better readability */
 }
 
 /* Container for the form */
 .container {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px); /* Glassmorphism effect with higher blur */
-    border-radius: 25px; /* Soft rounded corners for the form container */
-    padding: 40px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); /* Depth added with shadow */
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.15); /* More transparent container for elegance */
+    backdrop-filter: blur(20px); /* Stronger glassmorphism effect */
+    border-radius: 30px; /* More rounded corners for softer feel */
+    padding: 50px 40px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3); /* Deeper shadow for better depth */
+    border: 1px solid rgba(255, 255, 255, 0.2);
     width: 100%;
-    max-width: 400px; /* Limits the container width for smaller screen sizes */
-    animation: fadeIn 0.8s ease-in-out; /* Fade-in effect on load */
+    max-width: 420px; /* Max width increased for more spacious form */
+    animation: fadeIn 0.8s ease-in-out; /* Fade-in effect */
 }
 
 /* Form container */
@@ -34,32 +35,32 @@ body {
 }
 
 .form-container h2 {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     color: #fff;
-    font-size: 2rem;
-    font-weight: 700; /* Bolded text for emphasis */
-    letter-spacing: 1px; /* Space between letters for style */
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 2px; /* Increased letter-spacing for more elegant look */
 }
 
 /* Form inputs and button */
 .form input {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     margin: 12px 0;
     border: none;
-    border-radius: 8px; /* Rounded corners for inputs */
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
+    border-radius: 10px; /* Rounded corners for inputs */
+    background: rgba(255, 255, 255, 0.25);
+    color: #333; /* Dark text inside input fields for contrast */
     font-size: 1rem;
     transition: all 0.3s ease;
 }
 
 .form input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.8); /* Lighter placeholder color */
 }
 
 .form input:focus {
-    background: rgba(255, 255, 255, 0.3); /* Lighter background on focus */
+    background: rgba(255, 255, 255, 0.35); /* Lighter background on focus */
     box-shadow: 0 0 12px rgba(0, 102, 204, 0.6); /* Focus glow effect */
     outline: none;
 }
@@ -70,17 +71,18 @@ body {
     padding: 14px;
     margin-top: 15px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     background: #3498db; /* A soft, friendly blue */
     color: white;
     font-size: 1.1rem;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 5px 20px rgba(52, 152, 219, 0.3); /* Light shadow on the button */
 }
 
 .form button:hover {
-    background: #2980b9; /* Darker blue for the hover effect */
-    transform: translateY(-2px); /* Button slightly lifts on hover */
+    background: #2980b9; /* Darker blue on hover */
+    transform: translateY(-3px); /* Subtle lift effect */
 }
 
 .form-container p {
@@ -96,7 +98,7 @@ body {
 }
 
 .form-container a:hover {
-    color: #2980b9; /* Darker shade on hover */
+    color: #2980b9; /* Darker blue on hover */
 }
 
 /* Keyframe for fade-in effect */
@@ -118,15 +120,14 @@ body {
     }
 
     .form-container h2 {
-        font-size: 1.6rem; /* Slightly smaller heading on mobile */
+        font-size: 1.7rem; /* Slightly smaller heading on mobile */
     }
 
     .form input {
-        font-size: 0.9rem; /* Adjust input text size */
+        font-size: 0.95rem; /* Adjust input text size */
     }
 
     .form button {
         font-size: 1rem;
     }
 }
-
