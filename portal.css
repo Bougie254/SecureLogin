@@ -1,0 +1,131 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;  /* Updated font for a fresh look */
+}
+
+body {
+    height: 100vh;
+    background: url('hero.jpeg') no-repeat center center/cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 700;  /* Bolded the logo for prominence */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 20px; /* Increased spacing for more balanced navbar */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: rgba(255, 107, 0, 0.9);
+    text-shadow: 0px 0px 8px rgba(255, 107, 0, 0.6); /* Added glow effect on hover */
+}
+
+/* Portal Container */
+.portal-container {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glassmorphic Cards */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px); /* Increased blur for stronger glassmorphism effect */
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.3);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px); /* Added subtle lift effect on hover */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons */
+.btn {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: rgba(255, 107, 0, 0.85);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(255, 107, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: rgba(230, 92, 0, 0.95);
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(230, 92, 0, 0.6); /* Stronger shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portal-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
